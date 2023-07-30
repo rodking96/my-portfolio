@@ -130,27 +130,48 @@ header h1 {
     flex-wrap: wrap;
     justify-content: center;
   }
-  
-  
-  
-  /* Tablets - header changes color */
-  @media screen and (max-width: 992px) {
+
+
+
+  @media screen and (max-width: 980px) {
     header {
-      background: #772014;
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
     }
+
+    header h1 {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      font-size: 10vw;
+    }
+
+    header nav {
+      justify-content: center;
+    }
+
+    .page-section > h2,
+    .page-section > div {
+      flex: 0 0 100%;
+    }
+
+    .page-section > h2 {
+      border-right: none;
+      border-bottom: 4px solid var(--primary);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 7vw;
+
+    }
+
   }
-  
-  /* Large smartphones - navbar changes color */
+
   @media screen and (max-width: 768px) {
-    nav {
-      background-color: #bb8588;
+    .contact address {
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
-  
-  /* Small smartphones - image placeholders change color */
-  @media screen and (max-width: 576px) {
-    .sample-img {
-      background-color: #8ac4ff;
-    }
-  }
-  
+
