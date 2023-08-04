@@ -3,6 +3,7 @@
   }
 
   :root {
+    /* declare a variable with `--` syntax */
     --primary: rgba(68, 88, 119, 1);
     --secondary: rgba(146, 204, 206, 1);
     --tertiary: rgba(49, 52, 61, 1);
@@ -16,6 +17,7 @@
     margin: 0;
     padding: 0;
     color: var(--primary);
+    /* Refer to CSS values by the name of the custom property we assigned it */
     background-color: var(--light);
     line-height: 1.5;
   }
@@ -34,10 +36,13 @@
   }
   
   header {
+    /* Turns this element into a flexbox */
     display: flex;
+    /* Defines how to distribute the empty space between child elements */
     justify-content: space-between;
     align-items: center;
     padding: 15px 6% 15px 0;
+    /* Forces elements to the next line if they don't fit */
     flex-wrap: wrap;
     background-color: var(--tertiary);
     box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
@@ -54,8 +59,10 @@ header h1 {
 
 
   nav {
+    /* Turns this element into a flexbox */
     display: flex;
     flex-direction: row;
+    /* Forces elements to the next line if they don't fit */
     flex-wrap: wrap;
   }
   
@@ -161,7 +168,8 @@ header h1 {
     line-height: 1;
   }
 
-
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+/* Tablets - header changes color */
 
   @media screen and (max-width: 980px) {
     header {
@@ -197,6 +205,8 @@ header h1 {
     }
 
   }
+
+/* Large smartphones - navbar changes color */
 
   @media screen and (max-width: 768px) {
 
