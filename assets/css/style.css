@@ -52,6 +52,7 @@ header h1 {
   line-height: 1;
 }
 
+
   nav {
     display: flex;
     flex-direction: row;
@@ -134,7 +135,7 @@ header h1 {
   .flex-item {
     border: 5px solid var(--secondary);
     background-color: var(--primary);
-    color: var(--tertiary);
+    color: var(--light);
     min-height: 150px;
     max-height: 150px;
     flex-basis: calc(50% - 1em);
